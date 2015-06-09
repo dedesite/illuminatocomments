@@ -1,0 +1,26 @@
+{
+    "providers": [
+        "Illuminate\\Routing\\ControllerServiceProvider",
+        "Illuminate\\Database\\DatabaseServiceProvider",
+        "Illuminate\\Filesystem\\FilesystemServiceProvider",
+        "Illuminate\\Translation\\TranslationServiceProvider",
+        "Illuminate\\Validation\\ValidationServiceProvider",
+        "Illuminate\\View\\ViewServiceProvider"
+    ],
+    "eager": [
+        "Illuminate\\Routing\\ControllerServiceProvider",
+        "Illuminate\\Database\\DatabaseServiceProvider",
+        "Illuminate\\Filesystem\\FilesystemServiceProvider",
+        "Illuminate\\Validation\\ValidationServiceProvider",
+        "Illuminate\\View\\ViewServiceProvider"
+    ],
+    "deferred": {
+        "translator": "Illuminate\\Translation\\TranslationServiceProvider",
+        "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider"
+    },
+    "when": {
+        "Illuminate\\Translation\\TranslationServiceProvider": [
+
+        ]
+    }
+}
