@@ -117,7 +117,7 @@ return [
 		//'Illuminate\Auth\AuthServiceProvider',
 		//'Illuminate\Bus\BusServiceProvider',
 		//'Illuminate\Cache\CacheServiceProvider',
-		//'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
+		'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
 		'Illuminate\Routing\ControllerServiceProvider',
 		//'Illuminate\Cookie\CookieServiceProvider',
 		'Illuminate\Database\DatabaseServiceProvider',
