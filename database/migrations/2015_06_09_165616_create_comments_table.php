@@ -12,7 +12,7 @@ class CreateCommentsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('comments', function(Blueprint $table)
+		Schema::create('illuminato_comments', function(Blueprint $table)
 		{
 			$table->increments('id_illuminato_comments');
 			$table->integer('id_product');
@@ -29,7 +29,7 @@ class CreateCommentsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('users');
+		Schema::drop('illuminato_comments');
 	}
 
 }

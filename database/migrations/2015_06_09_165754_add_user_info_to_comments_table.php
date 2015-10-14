@@ -12,9 +12,12 @@ class AddUserInfoToCommentsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('comments', function(Blueprint $table)
+		Schema::table('illuminato_comments', function(Blueprint $table)
 		{
 			//
+			$table->string('firstname', 255)->after('id_product');
+			$table->string('lastname', 255)->after('firstname');
+			$table->string('email', 255)->after('lastname');
 		});
 	}
 
@@ -25,9 +28,10 @@ class AddUserInfoToCommentsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('comments', function(Blueprint $table)
+		Schema::table('illuminato_comments', function(Blueprint $table)
 		{
 			//
+			$table->dropColumn(['firstname', 'lastname', 'email']);
 		});
 	}
 

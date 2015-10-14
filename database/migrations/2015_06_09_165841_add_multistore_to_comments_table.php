@@ -12,9 +12,10 @@ class AddMultistoreToCommentsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('comments', function(Blueprint $table)
+		Schema::table('illuminato_comments', function(Blueprint $table)
 		{
 			//
+			$table->integer('id_shop')->after('id_illuminato_comments');
 		});
 	}
 
@@ -25,9 +26,10 @@ class AddMultistoreToCommentsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('comments', function(Blueprint $table)
+		Schema::table('illuminato_comments', function(Blueprint $table)
 		{
 			//
+			$table->dropColumn('id_shop');
 		});
 	}
 
