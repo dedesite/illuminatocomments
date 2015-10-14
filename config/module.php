@@ -9,7 +9,7 @@
 */
 return [
 	'tab' => 'front_office_features',
-	'version' => '0.1',
+	'version' => '0.3',
 	'author' => 'Andréas Livet',
 	// Note that we use Laravel's localization key system for localization
 	// It allows us to put string to localize in config file for example
