@@ -1,0 +1,1 @@
+<h3 class="page-product-heading" id="illuminatocomments-content-tab" data-scroll="true"{/if}>Salut</h3>
