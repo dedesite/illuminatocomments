@@ -13,6 +13,6 @@ return [
 	'author' => 'Andréas Livet',
 	// Note that we use Laravel's localization key system for localization
 	// It allows us to put string to localize in config file for example
-	'displayName' => 'module.name',
-	'description' => 'module.description',
+	'displayName' => 'comments::module.name',
+	'description' => 'comments::module.description',
 ];

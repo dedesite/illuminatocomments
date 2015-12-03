@@ -20,6 +20,6 @@ class IlluminatoComments extends Illuminato\Module {
 	public function hookDisplayProductTabContent($params)
 	{
 		$comment = new IlluminatoComments\Comments();
-		return view('display');
+		return view('comments::display');
 	}
 }
