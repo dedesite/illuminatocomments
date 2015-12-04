@@ -1,7 +1,0 @@
-{
-	"name": "andreas/illuminatocomments",
-	"description": "Laravel approach of Prestashop's mymodcomments",
-    "require": {
-    	"illuminate/support": "5.*"
-    }
-}

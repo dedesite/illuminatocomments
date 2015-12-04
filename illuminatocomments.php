@@ -13,8 +13,9 @@ class IlluminatoComments extends Illuminato\Module {
 			'version' => '0.3',
 			'author' => 'Andréas Livet',
 			// Note that we use Laravel's localization key system for localization
-			'displayName' => Lang::get('comments::module.name'),
-			'description' => Lang::get('comments::module.description'),
+			'displayName' => 'comments::module.name',
+			'description' => 'comments::module.description',
+			'namespace' => 'comments',
 		];
 	}
 
