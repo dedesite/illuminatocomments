@@ -1,8 +1,8 @@
 <?php namespace Illuminato\Comments;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminato\Support\IlluminatoServiceProvider;
 
-class CommentsServiceProvider extends ServiceProvider {
+class CommentsServiceProvider extends IlluminatoServiceProvider {
     /**
      * Register bindings in the container.
      *
@@ -22,8 +22,6 @@ class CommentsServiceProvider extends ServiceProvider {
 	{
 		$this->loadViewsFrom(__DIR__.'/../resources/views', 'comments');
 		$this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'comments');
-		$this->publishes([
-        	__DIR__.'/../config/illuminatocomments.php' => config_path('illuminatocomments.php'),
-    	]);
+		$this->loadConfigsFrom(__DIR__.'/../config', 'comments');
 	}
 }

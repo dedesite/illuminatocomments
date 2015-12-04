@@ -6,6 +6,18 @@ if (!defined('_PS_VERSION_'))
 
 class IlluminatoComments extends Illuminato\Module {
 
+	public function moduleDetails()
+	{
+		return [
+			'tab' => 'front_office_features',
+			'version' => '0.3',
+			'author' => 'Andréas Livet',
+			// Note that we use Laravel's localization key system for localization
+			'displayName' => Lang::get('comments::module.name'),
+			'description' => Lang::get('comments::module.description'),
+		];
+	}
+
 	public function install()
 	{
 		// Call install parent method
