@@ -37,4 +37,21 @@ class IlluminatoComments extends Illuminato\Module {
 		$comment = new IlluminatoComments\Comments();
 		return view('comments::display');
 	}
+
+	public function getContent()
+	{
+		if(Input::get('illuminatocomments_conf'))
+		{
+			$this->conf->set(['GRADE' => Input::has('enable_grades')]);
+			$this->conf->set(['COMMENTS' => Input::has('enable_comments')]);
+		}
+		$html = Form::open(['id' => 'illuminatocomments_form', 'enctype' => 'multipart/form-data', 'url' => URL::full()]);
+		$html .= Form::label('enable_grades', 'Enable grades');
+		$html .= Form::checkbox('enable_grades', '1', $this->conf->get('GRADE'));
+		$html .= Form::label('enable_comments', 'Enable comments');
+		$html .= Form::checkbox('enable_comments', '1', $this->conf->get('COMMENTS'));
+		$html .= Form::submit('Save', ['name' => 'illuminatocomments_conf', 'id' => 'illuminatocomments_conf']);
+		$html .= Form::close();
+		return $html;
+	}
 }
