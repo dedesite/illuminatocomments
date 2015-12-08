@@ -10,3 +10,7 @@ His goal is to show the simplicity (and superiority!) of IlluminatoShop approach
 # Pre requis
 
 You need to have Prestashop 1.6 and IlluminatoShop module installed.
+
+# Status
+
+This module does not currently implement all the mymodcomments features (ie hook, front & admin controllers), cause my goal is to rewrite completely those features with October CMS philosophy.

@@ -9,4 +9,5 @@ class Comments extends Model {
 	 * @var string
 	 */
 	protected $table = 'illuminato_comments';
+	protected $fillable = array('id_shop', 'id_product', 'firstname', 'lastname', 'email', 'grade', 'comment');
 }
